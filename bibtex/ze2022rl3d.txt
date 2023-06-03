@@ -1,9 +1,0 @@
-@article{Ze2022rl3d,
-    title={Visual Reinforcement Learning with Self-Supervised 3D Representations},
-    author={Yanjie Ze and Nicklas Hansen and Yinbo Chen and Mohit Jain and Xiaolong Wang},
-    journal={IEEE Robotics and Automation Letters}, 
-    year={2023},
-    volume={},
-    number={},
-    pages={1-1}
-}

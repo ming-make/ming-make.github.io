@@ -1,6 +1,0 @@
-@article{kumar2022inverse,
-	title={Graph Inverse Reinforcement Learning from Diverse Videos},
-	author={Kumar, Sateesh and Zamora, Jonathan and Hansen, Nicklas and Jangir, Rishabh and Wang, Xiaolong},
-	journal={Conference on Robot Learning (CoRL)},
-	year={2022}
-}
