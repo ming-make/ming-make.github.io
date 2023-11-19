@@ -66,26 +66,6 @@ body{
 .main .about .box .wrap a{
     color: #3175B3;
 }
-@media screen and (max-width: 750px) {
-    .main .about{
-        background-color: #FFFFFF;
-    }
-    .main .about .box{
-        text-align: center;
-        align-items: center;
-    }
-    .main .about .intro{
-        padding: 2%;
-        text-align: justify;
-    }
-    .main .about .box .wrap{
-        padding-left: 0;
-    }
-    .main .about .box .wrap .box-img{
-        width: 200px;
-        height: 200px;
-    }
-}
 
 .main .news{
     background-color: #FFFFFF;
@@ -157,24 +137,6 @@ body{
     text-align: justify;
     flex: 1.6;
 }
-@media screen and (max-width: 750px) {
-    .main .publications .paper{
-        background-color: #FFFFFF;
-    }
-    .main .publications .paper .paper-img{
-        padding-left: 2%;
-        align-items: center;
-        text-align: center;
-    }
-    .main .publications .paper .paper-img img{
-        width: 240px;
-        height: 120px;
-        box-shadow: 3px 3px 6px #888;
-    }
-    .main .publications .paper .paper-info{
-        padding-left: 2%;
-    }
-}
 
 .main .awards{
     background-color: #FFFFFF;
@@ -191,4 +153,51 @@ body{
 footer{
     background-color: #FFFFFF;
     text-align: center;
+}
+
+@media only screen and (max-width:750px) {
+    .main .about{
+        background-color: #FFFFFF;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .main .about .box{
+        text-align: center;
+        align-items: center;
+    }
+    .main .about .intro{
+        padding: 2%;
+        text-align: justify;
+    }
+    .main .about .box .wrap{
+        padding-left: 0;
+    }
+    .main .about .box .wrap .box-img{
+        width: 200px;
+        height: 200px;
+    }
+}
+
+@media screen and (max-width:650px) {
+    .main .publications .paper{
+        background-color: #FFFFFF;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .main .publications .paper .paper-img{
+        padding-left: 2%;
+        text-align: center;
+    }
+    .main .publications .paper .paper-img img{
+        width: 240px;
+        height: 120px;
+        box-shadow: 3px 3px 6px #888;
+    }
+    .main .publications .paper .paper-info{
+        padding-left: 2%;
+    }
 }
