@@ -1,0 +1,179 @@
+/* CSS stylesheet for Yeming Ni's homepage
+ * Author: Yeming Ni 
+ */
+a:link {
+    color:#0071bc;
+    text-decoration: none;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #EEEEEF;
+}
+
+.framebox{
+    margin:0 auto;
+	max-width: fit-content;
+	font-family: 'Century Gothic', sans-serif;
+	background-color: #FFFFFF;
+	border-radius: 10px;
+    box-shadow: 0px 0px 10px #888;
+}
+
+.header{
+    margin: 0 auto;
+    color: #000000;
+    background-color: #3175B3;
+}
+.header h1{
+    padding: 2%;
+    font-size: 20px;
+    letter-spacing: 4px;
+    font-weight: 100;
+}
+
+.main{
+    background-color: #FFFFFF;
+}
+
+.main .about{
+    background-color: #FFFFFF;
+    display: flex;
+}
+.main .about .box{
+    width: 20%;
+    text-align: center;
+    margin-top: 1%;
+    margin-left: 2%;
+}
+.main .about .intro{
+    padding: 2%;
+    width: 80%;
+    text-align: justify;
+}
+@media only screen and (max-width: 600px) {
+    .main .about{
+        background-color: #FFFFFF;
+    }
+    .main .about .box{
+        width: 20%;
+        text-align: center;
+        margin-top: 1%;
+        margin-left: 2%;
+    }
+    .main .about .intro{
+        padding: 2%;
+        width: 80%;
+        text-align: justify;
+    }
+}
+.main .about .box .box-img{
+    padding-top: 8%;
+    width: 200px;
+    height: 200px;
+}
+.main .about .box a{
+    color: #3175B3;
+}
+
+.main .news{
+    background-color: #FFFFFF;
+}
+.main .news h1{
+    padding-left: 2%;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    font-size: 20px;
+    letter-spacing: 4px;
+    font-weight: 100;
+}
+.main .news p{
+    font-weight: 100;
+    padding-left: 2%;
+}
+
+.main .teaching{
+    background-color: #FFFFFF;
+}
+.main .teaching h1{
+    padding-left: 2%;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    font-size: 20px;
+    letter-spacing: 4px;
+    font-weight: 100;
+}
+.main .teaching p{
+    font-weight: 100;
+    padding-left: 2%;
+}
+
+.main .publications{
+    background-color: #FFFFFF;
+}
+.main .publications h1{
+    padding-left: 2%;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    font-size: 20px;
+    letter-spacing: 4px;
+    font-weight: 100;
+}
+.main .publications p{
+    font-weight: 100;
+    padding: 0;
+}
+.main .publications .paper{
+    background-color: #FFFFFF;
+    display: flex;
+}
+.main .publications .paper .paper-img{
+    width: 20%;
+    padding-left: 2%;
+    align-items: center;
+    display: flex;
+}
+.main .publications .paper .paper-img img{
+    width: 240px;
+    height: 120px;
+    box-shadow: 3px 3px 6px #888;
+}
+.main .publications .paper .paper-info{
+    width: 80%;
+    padding-left: 2%;
+    text-align: justify;
+}
+@media only screen and (max-width: 600px) {
+    .main .publications .paper{
+        background-color: #FFFFFF;
+    }
+    .main .publications .paper .paper-img{
+        width: 20%;
+        padding-left: 2%;
+        align-items: center;
+        display: flex;
+    }
+    .main .publications .paper .paper-info{
+        width: 80%;
+        padding-left: 2%;
+        text-align: justify;
+    }
+}
+
+.main .awards{
+    background-color: #FFFFFF;
+}
+.main .awards h1{
+    padding-left: 2%;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    font-size: 20px;
+    letter-spacing: 4px;
+    font-weight: 100;
+}
+
+footer{
+    background-color: #FFFFFF;
+    text-align: center;
+}
