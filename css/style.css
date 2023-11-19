@@ -40,40 +40,31 @@ body{
 .main .about{
     background-color: #FFFFFF;
     display: flex;
+    justify-content: space-around;
+    flex-shrink: 0;
 }
 .main .about .box{
-    width: 20%;
     text-align: center;
     margin-top: 1%;
     margin-left: 2%;
+    flex: 0.4;
+    display: flex;
+    align-items: center;
 }
 .main .about .intro{
     padding: 2%;
-    width: 80%;
     text-align: justify;
+    flex: 1.6;
 }
-@media only screen and (max-width: 600px) {
-    .main .about{
-        background-color: #FFFFFF;
-    }
-    .main .about .box{
-        width: 20%;
-        text-align: center;
-        margin-top: 1%;
-        margin-left: 2%;
-    }
-    .main .about .intro{
-        padding: 2%;
-        width: 80%;
-        text-align: justify;
-    }
+.main .about .box .wrap{
+    padding-left: 2%;
 }
-.main .about .box .box-img{
+.main .about .box .wrap .box-img{
     padding-top: 8%;
     width: 200px;
     height: 200px;
 }
-.main .about .box a{
+.main .about .box .wrap a{
     color: #3175B3;
 }
 
@@ -127,12 +118,14 @@ body{
 .main .publications .paper{
     background-color: #FFFFFF;
     display: flex;
+    justify-content: space-around;
+    flex-shrink: 0;
 }
 .main .publications .paper .paper-img{
-    width: 20%;
     padding-left: 2%;
     align-items: center;
     display: flex;
+    flex: 0.4;
 }
 .main .publications .paper .paper-img img{
     width: 240px;
@@ -140,25 +133,9 @@ body{
     box-shadow: 3px 3px 6px #888;
 }
 .main .publications .paper .paper-info{
-    width: 80%;
     padding-left: 2%;
     text-align: justify;
-}
-@media only screen and (max-width: 600px) {
-    .main .publications .paper{
-        background-color: #FFFFFF;
-    }
-    .main .publications .paper .paper-img{
-        width: 20%;
-        padding-left: 2%;
-        align-items: center;
-        display: flex;
-    }
-    .main .publications .paper .paper-info{
-        width: 80%;
-        padding-left: 2%;
-        text-align: justify;
-    }
+    flex: 1.6;
 }
 
 .main .awards{
