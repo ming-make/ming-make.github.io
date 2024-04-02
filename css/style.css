@@ -2,47 +2,49 @@
  * Author: Yeming Ni 
  */
 a:link {
-    color:#0071bc;
+    color: #0071bc;
     text-decoration: none;
 }
 
-body{
+body {
     margin: 0;
     padding: 0;
     background-color: #EEEEEF;
 }
 
-.framebox{
-    margin:0 auto;
-	max-width: fit-content;
-	font-family: 'Arial', sans-serif;
-	background-color: #FFFFFF;
-	border-radius: 10px;
+.framebox {
+    margin: 0 auto;
+    max-width: fit-content;
+    font-family: 'Arial', sans-serif;
+    background-color: #FFFFFF;
+    border-radius: 10px;
     box-shadow: 0px 0px 10px #888;
 }
 
-.header{
+.header {
     margin: 0 auto;
     color: #000000;
     background-color: #3175B3;
 }
-.header h1{
+
+.header h1 {
     padding: 2%;
     font-size: 20px;
     letter-spacing: 4px;
     font-weight: 100;
 }
 
-.main{
+.main {
     background-color: #FFFFFF;
 }
 
-.main .about{
+.main .about {
     background-color: #FFFFFF;
     display: flex;
     justify-content: space-around;
 }
-.main .about .box{
+
+.main .about .box {
     text-align: center;
     margin-top: 1%;
     margin-left: 2%;
@@ -50,27 +52,32 @@ body{
     display: flex;
     align-items: center;
 }
-.main .about .intro{
+
+.main .about .intro {
     padding: 2%;
     text-align: justify;
     flex: 1.6;
 }
-.main .about .box .wrap{
+
+.main .about .box .wrap {
     padding-left: 2%;
 }
-.main .about .box .wrap .box-img{
+
+.main .about .box .wrap .box-img {
     padding-top: 8%;
     width: 200px;
     height: 200px;
 }
-.main .about .box .wrap a{
+
+.main .about .box .wrap a {
     color: #3175B3;
 }
 
-.main .news{
+.main .news {
     background-color: #FFFFFF;
 }
-.main .news h1{
+
+.main .news h1 {
     padding-left: 2%;
     padding-top: 1%;
     padding-bottom: 1%;
@@ -78,15 +85,17 @@ body{
     letter-spacing: 4px;
     font-weight: 100;
 }
-.main .news p{
+
+.main .news p {
     font-weight: 100;
     padding-left: 2%;
 }
 
-.main .teaching{
+.main .teaching {
     background-color: #FFFFFF;
 }
-.main .teaching h1{
+
+.main .teaching h1 {
     padding-left: 2%;
     padding-top: 1%;
     padding-bottom: 1%;
@@ -94,21 +103,24 @@ body{
     letter-spacing: 4px;
     font-weight: 100;
 }
-.main .teaching h2{
+
+.main .teaching h2 {
     padding-left: 2%;
     font-size: 15px;
     letter-spacing: 3px;
     font-weight: 100;
 }
-.main .teaching p{
+
+.main .teaching p {
     font-weight: 100;
     padding-left: 2%;
 }
 
-.main .publications{
+.main .publications {
     background-color: #FFFFFF;
 }
-.main .publications h1{
+
+.main .publications h1 {
     padding-left: 2%;
     padding-top: 1%;
     padding-bottom: 1%;
@@ -116,38 +128,44 @@ body{
     letter-spacing: 4px;
     font-weight: 100;
 }
-.main .publications p{
+
+.main .publications p {
     font-weight: 100;
     padding: 0;
 }
-.main .publications .paper{
+
+.main .publications .paper {
     background-color: #FFFFFF;
     display: flex;
     justify-content: space-around;
     flex-shrink: 0;
 }
-.main .publications .paper .paper-img{
+
+.main .publications .paper .paper-img {
     padding-left: 2%;
     align-items: center;
     text-align: center;
     display: flex;
     flex: 0.4;
 }
-.main .publications .paper .paper-img img{
+
+.main .publications .paper .paper-img img {
     width: 240px;
     height: 120px;
     box-shadow: 3px 3px 6px #888;
 }
-.main .publications .paper .paper-info{
+
+.main .publications .paper .paper-info {
     padding-left: 2%;
     text-align: justify;
     flex: 1.6;
 }
 
-.main .awards{
+.main .awards {
     background-color: #FFFFFF;
 }
-.main .awards h1{
+
+.main .awards h1 {
     padding-left: 2%;
     padding-top: 1%;
     padding-bottom: 1%;
@@ -156,54 +174,61 @@ body{
     font-weight: 100;
 }
 
-footer{
+footer {
     background-color: #FFFFFF;
     text-align: center;
 }
 
 @media only screen and (max-width:750px) {
-    .main .about{
+    .main .about {
         background-color: #FFFFFF;
         display: flex;
         flex-direction: column;
         justify-content: space-around;
         align-items: center;
     }
-    .main .about .box{
+
+    .main .about .box {
         text-align: center;
         align-items: center;
     }
-    .main .about .intro{
+
+    .main .about .intro {
         padding: 2%;
         text-align: justify;
     }
-    .main .about .box .wrap{
+
+    .main .about .box .wrap {
         padding-left: 0;
     }
-    .main .about .box .wrap .box-img{
+
+    .main .about .box .wrap .box-img {
         width: 200px;
         height: 200px;
     }
 }
 
 @media screen and (max-width:650px) {
-    .main .publications .paper{
+    .main .publications .paper {
         background-color: #FFFFFF;
         display: flex;
         flex-direction: column;
         justify-content: space-around;
         align-items: center;
     }
-    .main .publications .paper .paper-img{
+
+    .main .publications .paper .paper-img {
         padding-left: 2%;
         text-align: center;
     }
-    .main .publications .paper .paper-img img{
+
+    .main .publications .paper .paper-img img {
         width: 240px;
         height: 120px;
         box-shadow: 3px 3px 6px #888;
     }
-    .main .publications .paper .paper-info{
+
+    .main .publications .paper .paper-info {
         padding-left: 2%;
     }
 }
