@@ -1,234 +1,185 @@
 /* CSS stylesheet for Yeming Ni's homepage
- * Author: Yeming Ni 
- */
-a:link {
-    color: #0071bc;
-    text-decoration: none;
+Author: Yeming Ni
+Last Update: 2024/4/5 */
+
+a {
+    color: #3F3F3F;
+}
+
+a:hover {
+    color: #8F8F8F;
+}
+
+h1 {
+    font-size: 28px;
+    font-family: 'Oswald', sans-serif;
+    font-weight: normal;
+}
+
+h2 {
+    font-size: 23px;
+    font-family: 'Oswald', sans-serif;
+    font-weight: normal;
+}
+
+h3 {
+    font-size: 20px;
 }
 
 body {
-    margin: 0;
-    padding: 0;
-    background-color: #EEEEEF;
-}
-
-.framebox {
-    margin: 0 auto;
-    max-width: fit-content;
-    font-family: 'Arial', sans-serif;
-    background-color: #FFFFFF;
-    border-radius: 10px;
-    box-shadow: 0px 0px 10px #888;
+    color: black;
+    font-size: 18px;
+    margin: 0px auto 0px auto;
+    max-width: 650px;
+    font-family: 'Old Standard TT', serif;
 }
 
 .header {
-    margin: 0 auto;
-    color: #000000;
-    background-color: #3175B3;
-}
-
-.header h1 {
-    padding: 2%;
-    font-size: 20px;
-    letter-spacing: 4px;
-    font-weight: 100;
-}
-
-.main {
-    background-color: #FFFFFF;
-}
-
-.main .about {
-    background-color: #FFFFFF;
+    padding: 2px 0px 12px 0px;
     display: flex;
-    justify-content: space-around;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+
+    .contact {
+        width: 70%;
+
+        h1 {
+            font-weight: 450;
+        }
+
+        h3 {
+            color: #3175B3;
+            font-weight: normal;
+        }
+
+        p {
+            font-size: 14px;
+        }
+    }
+
+    .photo {
+        display: flex;
+        align-items: center;
+        width: 30%;
+
+        img {
+            width: 100%;
+            height: auto;
+        }
+    }
 }
 
-.main .about .box {
-    text-align: center;
-    margin-top: 1%;
-    margin-left: 2%;
-    flex: 0.4;
+.navi {
     display: flex;
-    align-items: center;
+    flex-direction: row;
+    justify-content: space-evenly;
+
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0px;
+
+    background-color: white;
+    z-index: 1;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+
+    p {
+        margin-top: 12px;
+        margin-bottom: 10px;
+        font-size: 20px;
+
+        a {
+            color: black;
+            text-decoration: none;
+        }
+
+        a:hover {
+            color: black;
+        }
+    }
 }
 
-.main .about .intro {
-    padding: 2%;
-    text-align: justify;
-    flex: 1.6;
-}
-
-.main .about .box .wrap {
-    padding-left: 2%;
-}
-
-.main .about .box .wrap .box-img {
-    padding-top: 8%;
-    width: 200px;
-    height: 200px;
-}
-
-.main .about .box .wrap a {
-    color: #3175B3;
-}
-
-.main .news {
-    background-color: #FFFFFF;
-}
-
-.main .news h1 {
-    padding-left: 2%;
-    padding-top: 1%;
-    padding-bottom: 1%;
-    font-size: 20px;
-    letter-spacing: 4px;
-    font-weight: 100;
-}
-
-.main .news p {
-    font-weight: 100;
-    padding-left: 2%;
-}
-
-.main .teaching {
-    background-color: #FFFFFF;
-}
-
-.main .teaching h1 {
-    padding-left: 2%;
-    padding-top: 1%;
-    padding-bottom: 1%;
-    font-size: 20px;
-    letter-spacing: 4px;
-    font-weight: 100;
-}
-
-.main .teaching h2 {
-    padding-left: 2%;
-    font-size: 15px;
-    letter-spacing: 3px;
-    font-weight: 100;
-}
-
-.main .teaching p {
-    font-weight: 100;
-    padding-left: 2%;
-}
-
-.main .publications {
-    background-color: #FFFFFF;
-}
-
-.main .publications h1 {
-    padding-left: 2%;
-    padding-top: 1%;
-    padding-bottom: 1%;
-    font-size: 20px;
-    letter-spacing: 4px;
-    font-weight: 100;
-}
-
-.main .publications p {
-    font-weight: 100;
-    padding: 0;
-}
-
-.main .publications .paper {
-    background-color: #FFFFFF;
-    display: flex;
-    justify-content: space-around;
-    flex-shrink: 0;
-}
-
-.main .publications .paper .paper-img {
-    padding-left: 2%;
-    align-items: center;
-    text-align: center;
-    display: flex;
-    flex: 0.4;
-}
-
-.main .publications .paper .paper-img img {
-    width: 240px;
-    height: 120px;
-    box-shadow: 3px 3px 6px #888;
-}
-
-.main .publications .paper .paper-info {
-    padding-left: 2%;
-    text-align: justify;
-    flex: 1.6;
-}
-
-.main .awards {
-    background-color: #FFFFFF;
-}
-
-.main .awards h1 {
-    padding-left: 2%;
-    padding-top: 1%;
-    padding-bottom: 1%;
-    font-size: 20px;
-    letter-spacing: 4px;
-    font-weight: 100;
-}
-
-footer {
-    background-color: #FFFFFF;
-    text-align: center;
-}
-
-@media only screen and (max-width:750px) {
-    .main .about {
-        background-color: #FFFFFF;
+.publications {
+    .pub-block {
+        border: 2px dashed #8F8F8F;
+        margin-bottom: 10px;
         display: flex;
         flex-direction: column;
-        justify-content: space-around;
         align-items: center;
-    }
 
-    .main .about .box {
-        text-align: center;
-        align-items: center;
-    }
+        .pub-intro {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
 
-    .main .about .intro {
-        padding: 2%;
-        text-align: justify;
-    }
+            .pub-img {
+                display: flex;
+                align-items: center;
+                width: 30%;
 
-    .main .about .box .wrap {
-        padding-left: 0;
-    }
+                img {
+                    width: 100%;
+                    height: auto;
+                }
+            }
 
-    .main .about .box .wrap .box-img {
-        width: 200px;
-        height: 200px;
+            .pub-info {
+                width: 68%;
+
+                p {
+                    margin-top: 4px;
+                    margin-bottom: 4px;
+                }
+
+                a {
+                    text-decoration: none;
+                }
+            }
+        }
+
+        .abstract {
+            width: 95%;
+
+            p {
+                font: 14px;
+                margin-top: 5px;
+                margin-bottom: 5px;
+            }
+        }
     }
 }
 
-@media screen and (max-width:650px) {
-    .main .publications .paper {
-        background-color: #FFFFFF;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-around;
-        align-items: center;
+.contact {
+    table {
+        position: relative;
+        width: 100%;
+        display: block;
     }
 
-    .main .publications .paper .paper-img {
-        padding-left: 2%;
-        text-align: center;
+    thead {
+        float: left;
     }
 
-    .main .publications .paper .paper-img img {
-        width: 240px;
-        height: 120px;
-        box-shadow: 3px 3px 6px #888;
+    tbody tr {
+        display: inline-block;
     }
 
-    .main .publications .paper .paper-info {
-        padding-left: 2%;
+    th {
+        text-align: left;
+        width: 100px;
+    }
+
+    th,
+    td {
+        height: auto;
+        display: block;
+    }
+}
+
+.footer {
+    text-align: center;
+
+    p {
+        font-size: 14px;
     }
 }
