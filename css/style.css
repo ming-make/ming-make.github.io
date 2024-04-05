@@ -30,7 +30,7 @@ body {
     color: black;
     font-size: 18px;
     margin: 0px auto 0px auto;
-    max-width: 700px;
+    width: 650px;
     font-family: 'Old Standard TT', serif;
 }
 
@@ -39,147 +39,162 @@ body {
     display: flex;
     flex-direction: row-reverse;
     justify-content: space-between;
+    align-items: center;
+}
 
-    .contact {
-        width: 70%;
+.header .about {
+    width: 70%;
+}
 
-        h1 {
-            font-weight: 450;
-        }
+.header .about h1 {
+    font-weight: 450;
+}
 
-        h3 {
-            color: #3175B3;
-            font-weight: normal;
-        }
+.header .about h3 {
+    color: #3175B3;
+    font-weight: normal;
+}
 
-        p {
-            font-size: 14px;
-        }
-    }
+.header .about p {
+    font-size: 14px;
+}
 
-    .photo {
-        display: flex;
-        align-items: center;
-        width: 30%;
+.header .photo {
+    display: flex;
+    align-items: center;
+    width: 30%;
+}
 
-        img {
-            width: 100%;
-            height: auto;
-        }
-    }
+.header .photo img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
 
-    .navi {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-evenly;
+.navi {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
 
-        position: sticky;
-        position: -webkit-sticky;
-        top: 0px;
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0px;
 
-        background-color: white;
-        z-index: 1;
-        border-top: 2px solid black;
-        border-bottom: 2px solid black;
+    background-color: white;
+    z-index: 1;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+}
 
-        p {
-            margin-top: 12px;
-            margin-bottom: 10px;
-            font-size: 20px;
+.navi p {
+    margin-top: 12px;
+    margin-bottom: 10px;
+    font-size: 20px;
+}
 
-            a {
-                color: black;
-                text-decoration: none;
-            }
+.navi p a {
+    color: black;
+}
 
-            a:hover {
-                color: black;
-            }
-        }
-    }
+.navi p a:hover {
+    color: black;
+    text-decoration: none;
+}
 
-    .publications {
-        .pub-block {
-            border: 2px dashed #8F8F8F;
-            margin-bottom: 10px;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
+.publications {
+    .pub-block {
+        .pub-intro {
 
-            .pub-intro {
-                display: flex;
-                flex-direction: row;
-                justify-content: space-between;
-
-                .pub-img {
-                    display: flex;
-                    align-items: center;
-                    width: 30%;
-
-                    img {
-                        width: 100%;
-                        height: auto;
-                    }
-                }
-
-                .pub-info {
-                    width: 68%;
-
-                    p {
-                        margin-top: 4px;
-                        margin-bottom: 4px;
-                    }
-
-                    a {
-                        text-decoration: none;
-                    }
-                }
-            }
-
-            .abstract {
-                width: 95%;
-
-                p {
-                    font: 14px;
-                    margin-top: 5px;
-                    margin-bottom: 5px;
-                }
-            }
+            .abstract {}
         }
     }
+}
 
-    .contact {
-        table {
+.publications .pub-block {
+    border: 2px dashed #8F8F8F;
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 
-            position: relative;
-            width: 100%;
-            display: block;
-        }
+.publications .pub-block .pub-intro {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
 
-        thead {
-            float: left;
-        }
+.publications .pub-block .pub-intro .pub-img {
+    display: flex;
+    align-items: center;
+    width: 30%;
+}
 
-        tbody tr {
-            display: inline-block;
-        }
+.publications .pub-block .pub-intro .pub-img img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
 
-        th {
-            text-align: left;
-            width: 100px;
-        }
+.publications .pub-block .pub-intro .pub-info {
+    width: 68%;
+}
 
-        th,
-        td {
-            height: auto;
-            display: block;
-        }
+.publications .pub-block .pub-intro .pub-info p {
+    margin-top: 4px;
+    margin-bottom: 4px;
+}
+
+.publications .pub-block .pub-intro .pub-info a {
+    text-decoration: none;
+}
+
+.publications .pub-block .abstract {
+    width: 95%;
+
+    p {
+        font: 14px;
+        margin-top: 5px;
+        margin-bottom: 5px;
     }
+}
 
-    .footer {
-        text-align: center;
+.publications .pub-block .abstract p {
+    font: 14px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
 
-        p {
-            font-size: 14px;
-        }
-    }
+.contact table {
+    position: relative;
+    width: 100%;
+    display: block;
+}
+
+.contact table thead {
+    float: left;
+}
+
+.contact table thead th {
+    text-align: left;
+    width: 100px;
+    height: auto;
+    display: block;
+}
+
+.contact table tbody tr {
+    display: inline-block;
+}
+
+.contact table tbody tr td {
+    height: auto;
+    display: block;
+}
+
+.footer {
+    text-align: center;
+}
+
+.footer p {
+    font-size: 14px;
+}
