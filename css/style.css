@@ -92,12 +92,12 @@ body {
     font-size: 20px;
 }
 
-.navi p a {
+.navi a {
     color: black;
     text-decoration: none;
 }
 
-.navi p a:hover {
+.navi a:hover {
     color: black;
 }
 
