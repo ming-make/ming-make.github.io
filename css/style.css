@@ -94,11 +94,11 @@ body {
 
 .navi p a {
     color: black;
+    text-decoration: none;
 }
 
 .navi p a:hover {
     color: black;
-    text-decoration: none;
 }
 
 .publications {
