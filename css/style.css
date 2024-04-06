@@ -1,6 +1,7 @@
 /* CSS stylesheet for Yeming Ni's homepage
-Author: Yeming Ni
-Last Update: 2024/4/5 */
+ * Author: Yeming Ni
+ * Last Update: 2024/4/6 
+ */
 
 a {
     color: #3F3F3F;
@@ -137,6 +138,9 @@ body {
 }
 
 .publications .pub-block .pub-intro .pub-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     width: 68%;
 }
 
