@@ -1,7 +1,6 @@
 /* CSS stylesheet for Yeming Ni's homepage
- * Author: Yeming Ni
- * Last Update: 2024/4/6 
- */
+Author: Yeming Ni
+Last Update: 2024/4/13  */
 
 a {
     color: #3F3F3F;
@@ -31,7 +30,7 @@ body {
     color: black;
     font-size: 18px;
     margin: 0px auto 0px auto;
-    width: 650px;
+    width: 1000px;
     font-family: 'Old Standard TT', serif;
 }
 
@@ -44,7 +43,11 @@ body {
 }
 
 .header .about {
-    width: 70%;
+    width: 68%;
+}
+
+.header .about a {
+    text-decoration: none;
 }
 
 .header .about h1 {
@@ -56,20 +59,21 @@ body {
     font-weight: normal;
 }
 
-.header .about p {
+.header .about small {
     font-size: 14px;
 }
 
 .header .photo {
     display: flex;
     align-items: center;
-    width: 30%;
+    width: 25%;
 }
 
 .header .photo img {
     display: block;
-    max-width: 100%;
+    max-width: 80%;
     height: auto;
+    margin: auto;
 }
 
 .navi {
@@ -102,15 +106,6 @@ body {
     color: black;
 }
 
-.publications {
-    .pub-block {
-        .pub-intro {
-
-            .abstract {}
-        }
-    }
-}
-
 .publications .pub-block {
     border: 2px dashed #8F8F8F;
     margin-bottom: 10px;
@@ -133,8 +128,9 @@ body {
 
 .publications .pub-block .pub-intro .pub-img img {
     display: block;
-    width: 100%;
+    width: 80%;
     height: auto;
+    margin: auto;
 }
 
 .publications .pub-block .pub-intro .pub-info {
