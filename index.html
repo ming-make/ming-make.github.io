@@ -20,13 +20,26 @@
 </head>
 
 <body>
+
     <!-- Header -->
     <div class="header">
         <div class="photo">
             <img src="./img/bread.jpg" alt="Yeming_Ni.jpg">
         </div>
+
         <div class="about">
             <h1 id="name">Yeming Ni</h1>
+            <!-- brief info for mobile -->
+            <div class="brief-info">
+                <p>Msater Student, <a href="http://www.ict.ac.cn/">ICT</a></p>
+                <p><a href="https://www.ucas.ac.cn/">University of Chinese Academy of Sciences</a></p>
+                <p style="font-size: 21px;">
+                    <a href="mailto:yeming.ni@gmail.com"><i class="fa-solid fa-envelope"></i></a>
+                    <a href="https://github.com/ming-make"><i class="fa-brands fa-github"></i></a>
+                    <a href="#"><i class="fa-brands fa-google"></i></a>
+                </p>
+            </div>
+
             <p>Yeming Ni is a first-year master student at Insititute of Computing Technology, Chinese Academy of
                 Sciences (ICT, CAS), advised by Prof. <a href="https://people.ucas.edu.cn/~lihuawei">Huawei Li</a> and
                 Prof. <a href="https://shengwenliang.github.io/">Shengwen Liang</a>.
@@ -40,11 +53,11 @@
 
     <!-- Navigation -->
     <div class="navi">
-        <p><a href="#research">Research</a></p>
-        <p><a href="#publications">Publications</a></p>
-        <p><a href="#teaching">Teaching</a></p>
-        <p><a href="#awards">Awards &amp; Honors</a></p>
-        <p><a href="#contact">Contact</a></p>
+        <p id="research-link"><a href="#research">Research</a></p>
+        <p id="publications"><a href="#publications">Publications</a></p>
+        <p id="teaching-link"><a href="#teaching">Teaching</a></p>
+        <p id="awards-link"><a href="#awards">Awards &amp; Honors</a></p>
+        <p id="contact-link"><a href="#contact">Contact</a></p>
     </div>
 
     <!-- Research -->
@@ -117,28 +130,6 @@
                                 class="fa-solid fa-code"></i>&nbsp;Code</a>
                     </p>
                 </div>
-            </div>
-
-            <hr width="600px">
-
-            <div class="abstract">
-                <details>
-                    <summary><strong>Abstract</strong></summary>
-                    <p>
-                        Data analysis and retrieval is a widely-used component in existing artificial intelligence
-                        systems. However, each request has to go through each layer across the I/O stack, which moves
-                        tremendous irrelevant data between secondary storage, DRAM, and the on-chip cache. This leads to
-                        high response latency and rising energy consumption. To address this issue, we propose Cognitive
-                        SSD, an energy-efficient engine for deep learning based unstructured data retrieval. In
-                        Cognitive SSD, a flash-accessing accelerator named DLG-x is placed by the side of flash memory
-                        to achieve near-data deep learning and graph search. Such functions of in-SSD deep learning and
-                        graph search are exposed to the users as library APIs via NVMe command extension. Experimental
-                        results on the FPGA-based prototype reveal that the proposed Cognitive SSD reduces latency by
-                        69.9% on average in comparison with CPU based solutions on conventional SSDs, and it reduces the
-                        overall system power consumption by up to 34.4% and 63.0% respectively when compared to CPU and
-                        GPU based solutions that deliver comparable performance.
-                    </p>
-                </details>
             </div>
         </div>
     </div>

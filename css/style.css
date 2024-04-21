@@ -1,6 +1,6 @@
 /* CSS stylesheet for Yeming Ni's homepage
 Author: Yeming Ni
-Last Update: 2024/4/13  */
+Last Update: 2024/4/20  */
 
 a {
     color: #3F3F3F;
@@ -44,6 +44,10 @@ body {
 
 .header .about {
     width: 68%;
+}
+
+.header .about .brief-info {
+    display: none;
 }
 
 .header .about a {
@@ -149,22 +153,6 @@ body {
     text-decoration: none;
 }
 
-.publications .pub-block .abstract {
-    width: 95%;
-
-    p {
-        font: 14px;
-        margin-top: 5px;
-        margin-bottom: 5px;
-    }
-}
-
-.publications .pub-block .abstract p {
-    font: 14px;
-    margin-top: 5px;
-    margin-bottom: 5px;
-}
-
 .contact table {
     position: relative;
     width: 100%;
@@ -197,4 +185,162 @@ body {
 
 .footer p {
     font-size: 14px;
+}
+
+/* for tablet */
+@media only screen and (max-width:999px) and (min-width:500px) {
+    body {
+        max-width: fit-content;
+        margin: 0px 10px 0px 10px;
+    }
+}
+
+/* for mobile */
+@media only screen and (max-width:500px) {
+    hr {
+        display: none;
+    }
+
+    p {
+        margin-top: 8px;
+        margin-bottom: 8px;
+    }
+
+    ul {
+        padding-inline-start: 15px;
+    }
+
+    h2 {
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    h3 {
+        font-size: 18px;
+        margin-top: 3px;
+        margin-bottom: 3px;
+    }
+
+    body {
+        width: 95%;
+        position: absolute;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+        font-size: 15px;
+    }
+
+    .header {
+        flex-direction: column;
+        margin-top: 25px;
+    }
+
+    .header .about {
+        width: fit-content;
+    }
+
+    .header .about h1 {
+        font-size: 25px;
+        font-weight: normal;
+        font-family: 'Old Standard TT', serif;
+        text-align: center;
+    }
+
+    .header .about .brief-info {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 30px;
+    }
+
+    .header .about .brief-info p {
+        font-size: 17px;
+    }
+
+
+    .header .about .brief-info a {
+        color: #3175B3;
+    }
+
+    .header .about .brief-info a:hover {
+        color: #3175B3;
+    }
+
+
+    .header .about small {
+        font-size: 10px;
+    }
+
+    .header .photo {
+        width: 65%;
+    }
+
+    .header .photo img {
+        max-width: auto;
+    }
+
+    .navi {
+        flex-wrap: wrap;
+        border-top: 1px solid black;
+        border-bottom: 1px solid black;
+    }
+
+    .navi p {
+        margin-top: 8px;
+        margin-bottom: 8px;
+        font-size: 18px;
+    }
+
+    .navi p#contact-link {
+        display: none;
+    }
+
+    .research {
+        display: flex;
+        flex-direction: column;
+        width: fit-content;
+        align-items: center;
+    }
+
+    .publications {
+        display: flex;
+        flex-direction: column;
+        width: fit-content;
+        align-items: center;
+    }
+
+    .publications .pub-block .pub-intro {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .publications .pub-block .pub-intro .pub-img {
+        align-items: center;
+        width: fit-content;
+    }
+
+    .publications .pub-block .pub-intro .pub-info {
+        width: 95%;
+    }
+
+    .teaching {
+        display: flex;
+        flex-direction: column;
+        width: fit-content;
+    }
+
+    .teaching h2 {
+        text-align: center;
+    }
+
+    .awards {
+        display: flex;
+        flex-direction: column;
+        width: fit-content;
+        align-items: center;
+    }
+
+    .contact {
+        display: none;
+    }
 }
