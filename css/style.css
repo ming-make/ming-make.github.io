@@ -30,7 +30,7 @@ body {
     color: black;
     font-size: 18px;
     margin: 0px auto 0px auto;
-    width: 1000px;
+    width: 800px;
     font-family: 'Old Standard TT', serif;
 }
 
@@ -188,7 +188,7 @@ body {
 }
 
 /* for tablet */
-@media only screen and (max-width:999px) and (min-width:500px) {
+@media only screen and (max-width:800px) and (min-width:500px) {
     body {
         max-width: fit-content;
         margin: 0px 10px 0px 10px;
