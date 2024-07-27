@@ -138,7 +138,7 @@ body {
 
 .publications .pub-block .pub-intro .pub-img img {
     display: block;
-    width: 80%;
+    width: 90%;
     height: auto;
     margin: auto;
 }
@@ -157,6 +157,17 @@ body {
 
 .publications .pub-block .pub-intro .pub-info a {
     text-decoration: none;
+}
+
+.publications .pub-block .pub-abstract {
+    display: none;
+    background-color: #f5f5f5;
+    width: 97%;
+    margin-bottom: 8px;
+}
+
+.publications .pub-block .pub-abstract p {
+    width: 97%;
 }
 
 .contact table {
@@ -194,7 +205,7 @@ body {
 }
 
 /* for tablet */
-@media only screen and (max-width:800px) and (min-width:500px) {
+@media only screen and (max-width:850px) and (min-width:500px) {
     body {
         max-width: fit-content;
         margin: 0px 10px 0px 10px;
@@ -263,16 +274,6 @@ body {
         font-size: 17px;
     }
 
-
-    .header .about .brief-info a {
-        color: #3175B3;
-    }
-
-    .header .about .brief-info a:hover {
-        color: #3175B3;
-    }
-
-
     .header .about small {
         font-size: 10px;
     }
@@ -282,7 +283,7 @@ body {
     }
 
     .header .photo img {
-        max-width: auto;
+        max-width: 70%;
     }
 
     .navi {
