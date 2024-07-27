@@ -14,12 +14,16 @@ h1 {
     font-size: 28px;
     font-family: 'Oswald', sans-serif;
     font-weight: normal;
+    margin-top: 25px;
+    margin-bottom: 25px;
 }
 
 h2 {
     font-size: 23px;
     font-family: 'Oswald', sans-serif;
     font-weight: normal;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 
 h3 {
@@ -30,8 +34,9 @@ body {
     color: black;
     font-size: 18px;
     margin: 0px auto 0px auto;
-    width: 800px;
+    width: 850px;
     font-family: 'Old Standard TT', serif;
+    line-height: 1.5em;
 }
 
 .header {
@@ -75,7 +80,8 @@ body {
 
 .header .photo img {
     display: block;
-    max-width: 80%;
+    border-radius: 50%;
+    max-width: 90%;
     height: auto;
     margin: auto;
 }
