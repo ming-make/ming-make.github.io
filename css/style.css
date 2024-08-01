@@ -170,6 +170,21 @@ body {
     width: 97%;
 }
 
+.publications .pub-block .pub-bibtex {
+    display: none;
+    background-color: #f5f5f5;
+    width: 97%;
+    margin-bottom: 8px;
+}
+
+.publications .pub-block .pub-bibtex pre {
+    width: 97%;
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: 17px;
+    white-space: pre;
+}
+
 .contact table {
     position: relative;
     width: 100%;
