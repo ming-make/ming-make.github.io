@@ -155,6 +155,10 @@ body {
     margin-bottom: 4px;
 }
 
+.publications .pub-block .pub-intro .pub-info #pub_menu_mobile {
+    display: none;
+}
+
 .publications .pub-block .pub-intro .pub-info a {
     text-decoration: none;
 }
@@ -363,6 +367,14 @@ body {
 
     .publications .pub-block .pub-intro .pub-info {
         width: 95%;
+    }
+
+    .publications .pub-block .pub-intro .pub-info #pub_menu {
+        display: none;
+    }
+
+    .publications .pub-block .pub-intro .pub-info #pub_menu_mobile {
+        display: block;
     }
 
     .publications .pub-block .pub-bibtex pre {
