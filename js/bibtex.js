@@ -19,7 +19,7 @@ function bibtexCopy(BibtexPre) {
     var content = document.getElementById(BibtexPre).innerHTML;
 
     navigator.clipboard.writeText(content)
-        .then(() => { console.log('Text copied to clipboard...'), alert("Copied!") })
+        .then(() => { console.log('Text copied to clipboard...') })
         .catch(err => {
             console.log('Something went wrong', err);
         })
