@@ -1,5 +1,5 @@
-function function_abstract() {
-    var x = document.getElementById("abstract");
+function function_abstract(AbstractElementId) {
+    var x = document.getElementById(AbstractElementId);
     if (window.getComputedStyle(x).display === "none") {
         x.style.display = "flex";
         x.style.setProperty('justify-content', 'center');
@@ -9,14 +9,14 @@ function function_abstract() {
     }
 }
 
-// function function_bibtex() {
-//     var x = document.getElementById("bibtex");
-//     if (window.getComputedStyle(x).display === "none") {
-//         x.style.display = "flex";
-//         x.style.setProperty('flex-direction', 'column');
-//         x.style.setProperty('justify-content', 'center');
-//         x.style.setProperty('align-items', 'center');
-//     } else {
-//         x.style.display = "none";
-//     }
-// }
+function function_bibtex(BibtexElementId) {
+    var x = document.getElementById(BibtexElementId);
+    if (window.getComputedStyle(x).display === "none") {
+        x.style.display = "flex";
+        x.style.setProperty('flex-direction', 'column');
+        x.style.setProperty('justify-content', 'center');
+        x.style.setProperty('align-items', 'center');
+    } else {
+        x.style.display = "none";
+    }
+}

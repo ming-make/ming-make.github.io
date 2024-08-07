@@ -179,10 +179,21 @@ body {
 
 .publications .pub-block .pub-bibtex pre {
     width: 97%;
-    margin-top: 0;
-    margin-bottom: 0;
+    white-space: pre-wrap;
+    font-size: 15px;
+    margin-bottom: 6px;
+}
+
+.publications .pub-block .pub-bibtex .pub-bibtex-operations {
+    display: inherit;
+    justify-content: space-between;
+    width: 97%;
+    margin-bottom: 6px;
+}
+
+.publications .pub-block .pub-bibtex .pub-bibtex-operations a {
     font-size: 17px;
-    white-space: pre;
+    text-decoration: none;
 }
 
 .contact table {
@@ -343,6 +354,14 @@ body {
 
     .publications .pub-block .pub-intro .pub-info {
         width: 95%;
+    }
+
+    .publications .pub-block .pub-bibtex pre {
+        font-size: 12px;
+    }
+
+    .publications .pub-block .pub-bibtex .pub-bibtex-operations a {
+        font-size: 14px;
     }
 
     .teaching {
