@@ -180,6 +180,7 @@ body {
 .publications .pub-block .pub-bibtex pre {
     width: 97%;
     white-space: pre-wrap;
+    word-wrap: break-word;
     font-size: 15px;
     margin-bottom: 6px;
 }
