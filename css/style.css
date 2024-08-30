@@ -205,20 +205,23 @@ body {
     background-color: #f7f7f7;
     width: 97%;
     margin-bottom: 8px;
+    align-items: center;
 }
 
 .publications .pub-block .pub-bibtex pre {
     width: 97%;
-    /* white-space: pre-wrap; */
-    /* word-wrap: break-word; */
+    margin-left: 1.5%;
+    margin-right: 1.5%;
     margin-bottom: 6px;
+    align-self: center;
     overflow-x: scroll;
 }
 
 .publications .pub-block .pub-bibtex .pub-bibtex-operations {
     display: flex;
+    margin-left: 1.5%;
+    margin-right: 1.5%;
     justify-content: space-between;
-    width: 97%;
     margin-bottom: 6px;
 }
 
@@ -267,6 +270,28 @@ body {
         width: 98%;
         margin: 0px 10px 0px 10px;
     }
+
+    .publications {
+        display: flex;
+        flex-direction: column;
+        width: fit-content;
+        align-items: center;
+    }
+
+    .publications .pub-block .pub-intro {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .publications .pub-block .pub-intro .pub-img {
+        align-items: center;
+        width: 70%;
+    }
+
+    .publications .pub-block .pub-intro .pub-info {
+        width: 95%;
+    }
+
 }
 
 /* for mobile */
@@ -381,10 +406,6 @@ body {
 
     .publications .pub-block .pub-intro .pub-info {
         width: 95%;
-    }
-
-    .publications .pub-block .pub-intro .pub-info #pub_menu_mobile {
-        display: block;
     }
 
     /* .publications .pub-block .pub-bibtex pre {

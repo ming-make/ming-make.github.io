@@ -13,7 +13,7 @@ function function_bibtex(BibtexElementId) {
     var x = document.getElementById(BibtexElementId);
     if (window.getComputedStyle(x).display === "none") {
         x.style.display = "grid";
-        x.style.setProperty('grid-direction', 'column');
+        x.style.setProperty('grid-auto-flow', 'row');
         x.style.setProperty('justify-content', 'center');
         x.style.setProperty('align-items', 'center');
     } else {
