@@ -205,26 +205,18 @@ body {
     background-color: #f7f7f7;
     width: 97%;
     margin-bottom: 8px;
-    overflow-x: auto;
 }
 
 .publications .pub-block .pub-bibtex pre {
     width: 97%;
-    /* css-3 */
-    white-space: pre-wrap;
-    /* Mozilla, since 1999 */
-    white-space: -moz-pre-wrap;
-    /* Opera 4-6 */
-    white-space: -pre-wrap;
-    /* Opera 7 */
-    white-space: -o-pre-wrap;
-    /* Internet Explorer 5.5+ */
-    word-wrap: break-word;
+    /* white-space: pre-wrap; */
+    /* word-wrap: break-word; */
     margin-bottom: 6px;
+    overflow-x: scroll;
 }
 
 .publications .pub-block .pub-bibtex .pub-bibtex-operations {
-    display: inherit;
+    display: flex;
     justify-content: space-between;
     width: 97%;
     margin-bottom: 6px;
