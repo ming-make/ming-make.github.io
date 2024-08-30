@@ -1,0 +1,426 @@
+/* CSS stylesheet for Yeming Ni's homepage
+Author: Yeming Ni   */
+
+a {
+    color: #3F3F3F;
+    cursor: pointer;
+}
+
+a:hover {
+    color: #8F8F8F;
+}
+
+h1 {
+    font-size: 28px;
+    font-family: 'Oswald', sans-serif;
+    font-weight: normal;
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+h2 {
+    font-size: 23px;
+    font-family: 'Oswald', sans-serif;
+    font-weight: normal;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+h3 {
+    font-size: 20px;
+}
+
+/* .side-nav {
+    position: fixed;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+    background: rgba(0, 0, 0, 0.7);
+    border-radius: 10px 0 0 10px;
+    padding: 10px;
+    z-index: 1000;
+}
+
+.side-nav-item {
+    text-align: center;
+    color: white;
+    padding: 10px;
+    margin: 5px 0;
+    cursor: pointer;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
+    font-size: 15px;
+}
+
+.side-nav-item:hover {
+    background: #007bff;
+    color: #fff;
+} */
+
+body {
+    color: black;
+    font-size: 18px;
+    margin: 0px auto 0px auto;
+    width: 850px;
+    font-family: 'Old Standard TT', serif;
+    line-height: 1.5em;
+}
+
+.header {
+    padding: 2px 0px 0px 0px;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header .about {
+    width: 68%;
+}
+
+.header .about .brief-info {
+    display: none;
+}
+
+.header .about a {
+    text-decoration: none;
+}
+
+.header .about h1 {
+    font-weight: 450;
+}
+
+.header .about h3 {
+    color: #3175B3;
+    font-weight: normal;
+}
+
+.header .about small {
+    font-size: 14px;
+}
+
+.header .photo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 25%;
+}
+
+.header .photo img {
+    display: block;
+    padding-bottom: 10px;
+    border-radius: 50%;
+    max-width: 90%;
+    height: auto;
+    margin: auto;
+}
+
+/* .navi {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0px;
+
+    background-color: white;
+    z-index: 1;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+}
+
+.navi p {
+    margin-top: 12px;
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+
+.navi a {
+    color: black;
+    text-decoration: none;
+}
+
+.navi a:hover {
+    color: black;
+} */
+
+.publications .pub-block {
+    border: 2px dashed #8F8F8F;
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.publications .pub-block .pub-intro {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.publications .pub-block .pub-intro .pub-img {
+    display: flex;
+    align-items: center;
+    width: 30%;
+}
+
+.publications .pub-block .pub-intro .pub-img img {
+    display: block;
+    width: 90%;
+    height: auto;
+    margin: auto;
+}
+
+.publications .pub-block .pub-intro .pub-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 68%;
+}
+
+.publications .pub-block .pub-intro .pub-info p {
+    margin-top: 4px;
+    margin-bottom: 4px;
+}
+
+.publications .pub-block .pub-intro .pub-info a {
+    text-decoration: none;
+}
+
+.publications .pub-block .pub-abstract {
+    display: none;
+    background-color: #f7f7f7;
+    width: 97%;
+    margin-bottom: 8px;
+}
+
+.publications .pub-block .pub-abstract p {
+    width: 97%;
+}
+
+.publications .pub-block .pub-bibtex {
+    display: none;
+    background-color: #f7f7f7;
+    width: 97%;
+    margin-bottom: 8px;
+}
+
+.publications .pub-block .pub-bibtex pre {
+    width: 97%;
+    white-space: pre-wrap;
+    /* css-3 */
+    white-space: -moz-pre-wrap;
+    /* Mozilla, since 1999 */
+    white-space: -pre-wrap;
+    /* Opera 4-6 */
+    white-space: -o-pre-wrap;
+    /* Opera 7 */
+    word-wrap: break-word;
+    /* Internet Explorer 5.5+ */
+    overflow-x: auto;
+    margin-bottom: 6px;
+}
+
+.publications .pub-block .pub-bibtex .pub-bibtex-operations {
+    display: inherit;
+    justify-content: space-between;
+    width: 97%;
+    margin-bottom: 6px;
+}
+
+.publications .pub-block .pub-bibtex .pub-bibtex-operations a {
+    font-size: 17px;
+    text-decoration: none;
+}
+
+.contact table {
+    position: relative;
+    width: 100%;
+    display: block;
+}
+
+.contact table thead {
+    float: left;
+}
+
+.contact table thead th {
+    text-align: left;
+    width: 100px;
+    height: auto;
+    display: block;
+}
+
+.contact table tbody tr {
+    display: inline-block;
+}
+
+.contact table tbody tr td {
+    height: auto;
+    display: block;
+}
+
+.footer {
+    text-align: center;
+}
+
+.footer p {
+    font-size: 14px;
+}
+
+/* for tablet */
+@media only screen and (max-width:850px) and (min-width:500px) {
+    body {
+        width: 98%;
+        margin: 0px 10px 0px 10px;
+    }
+}
+
+/* for mobile */
+@media only screen and (max-width:500px) {
+    hr {
+        display: none;
+    }
+
+    p {
+        margin-top: 8px;
+        margin-bottom: 8px;
+    }
+
+    ul {
+        padding-inline-start: 15px;
+    }
+
+    h2 {
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    h3 {
+        font-size: 18px;
+        margin-top: 3px;
+        margin-bottom: 3px;
+    }
+
+    body {
+        width: 95%;
+        position: absolute;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+        font-size: 15px;
+    }
+
+    .header {
+        flex-direction: column;
+        margin-top: 25px;
+    }
+
+    .header .about {
+        width: fit-content;
+    }
+
+    .header .about h1 {
+        font-size: 25px;
+        font-weight: normal;
+        font-family: 'Old Standard TT', serif;
+        text-align: center;
+    }
+
+    .header .about .brief-info {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 30px;
+    }
+
+    .header .about .brief-info p {
+        font-size: 17px;
+    }
+
+    .header .about small {
+        font-size: 10px;
+    }
+
+    .header .photo {
+        width: 65%;
+    }
+
+    .header .photo img {
+        max-width: 70%;
+    }
+
+    /* .navi {
+        flex-wrap: wrap;
+        border-top: 1px solid black;
+        border-bottom: 1px solid black;
+    }
+
+    .navi p {
+        margin-top: 8px;
+        margin-bottom: 8px;
+        font-size: 18px;
+    } */
+
+    /* .research {
+        display: flex;
+        flex-direction: column;
+        width: fit-content;
+        align-items: center;
+    } */
+
+    .publications {
+        display: flex;
+        flex-direction: column;
+        width: fit-content;
+        align-items: center;
+    }
+
+    .publications .pub-block .pub-intro {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .publications .pub-block .pub-intro .pub-img {
+        align-items: center;
+        width: fit-content;
+    }
+
+    .publications .pub-block .pub-intro .pub-info {
+        width: 95%;
+    }
+
+    .publications .pub-block .pub-intro .pub-info #pub_menu_mobile {
+        display: block;
+    }
+
+    /* .publications .pub-block .pub-bibtex pre {
+        font-size: 12px;
+    } */
+
+    .publications .pub-block .pub-bibtex .pub-bibtex-operations a {
+        font-size: 14px;
+    }
+
+    .teaching {
+        display: flex;
+        flex-direction: column;
+        width: fit-content;
+    }
+
+    .teaching h2 {
+        text-align: center;
+    }
+
+    .awards {
+        display: flex;
+        flex-direction: column;
+        width: fit-content;
+        align-items: center;
+    }
+
+    .contact {
+        display: none;
+    }
+}

@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=yes" />
+    <!-- for icons -->
+    <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js"></script>
+    <!-- for fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Old+Standard+TT:ital,wght@0,400;0,700;1,400&family=Oswald:wght@200..700&display=swap"
+        rel="stylesheet">
+    <!-- Site Icon -->
+    <link rel="icon" type="image/x-icon" href="./img/ucas.png">
+
+    <link rel="stylesheet" href="css/style.css">
+    <title>Yeming Ni</title>
+</head>
+
+<body>
+
+    <script src="js/script.js"></script>
+    <script src="js/bibtex.js"></script>
+
+    <!-- Header -->
+    <div class="header">
+        <div class="photo">
+            <img src="./img/bread.jpg" alt="Yeming_Ni.jpg">
+            <small>Credit: My nephew Bread.</small>
+        </div>
+
+        <div class="about">
+            <h1 id="name"><strong>Yeming Ni</strong></h1>
+            <!-- brief info for mobile -->
+            <div class="brief-info">
+                <p>Master Student, <a href="http://www.ict.ac.cn/">ICT</a></p>
+                <p><a href="https://www.ucas.ac.cn/">University of Chinese Academy of Sciences</a></p>
+                <p style="font-size: 21px;">
+                    <a href="mailto:niyeming24@mails.ucas.ac.cn"><i class="fa-solid fa-envelope"></i></a>
+                    <a href="https://github.com/ming-make"><i class="fa-brands fa-github"></i></a>
+                    <a href="#"><i class="fa-brands fa-google"></i></a>
+                </p>
+            </div>
+
+            <p>I am a first-year master student at Insititute of Computing Technology, Chinese Academy of
+                Sciences (ICT, CAS), advised by Prof. <a href="https://people.ucas.edu.cn/~lihuawei">Huawei Li</a> and
+                Prof. <a href="https://shengwenliang.github.io/">Shengwen Liang</a>. Previously, I obtained my
+                Bachelor's degree form Hefei University of Technology, majoring in computer science.
+            </p>
+            <p>I am interested in <strong>ML4Sys</strong> and <strong>Sys4ML</strong>. The theme of my current research
+                is to explore what <strong>LLMs</strong> (GPT, Claude, etc.) can do in computer architecture.
+            </p>
+            <p>One exciting project is kicking off. Stay stuned!</p>
+        </div>
+    </div>
+
+    <hr>
+
+    <!-- Navigation -->
+    <!-- <div class="navi">
+        <p id="publications-link"><a onclick="scrollToSection('publications')">Publications</a></p>
+        <p id="teaching-link"><a onclick="scrollToSection('teaching')">Teaching</a></p>
+        <p id="awards-link"><a onclick="scrollToSection('awards')">Awards &amp; Honors</a></p>
+        <p id="contact-link"><a onclick="scrollToSection('contact')">Contact</a></p>
+    </div> -->
+
+    <!-- Publications -->
+    <div class="publications" id="publications">
+        <h2><strong>Publications</strong></h2>
+        <p>I haven't published a single paper so far. The following content is just an example. Here, I
+            apologize to the authors of the paper I used.</p>
+
+        <!-- Paper 1 -->
+        <div class="pub-block">
+            <div class="pub-intro">
+                <div class="pub-img"><img src="./img/paper_1.png" alt="paper"></div>
+                <div class="pub-info">
+                    <p>
+                        <strong>Cognitive SSD: A Deep Learning Engine for In-Storage Data
+                            Retrieval</strong>
+                    </p>
+                    <p>
+                        <b>Shengwen Liang</b>, Ying Wang, Youyou Lu, Zhe Yang, Huawei Li and Xiaowei Li.
+                    </p>
+                    <p>
+                        USENIX Annual Technical Conference, <b>ATC</b>, 2019.
+                    </p>
+                    <p>
+                        <a onclick="function_abstract('atc19-liang-abstract')"><i
+                                class="fa-solid fa-file"></i>&nbsp;Abstract</a> |
+                        <a href="./assets/paper/atc19-liang/atc19-liang.pdf" target="_blank"><i
+                                class="fa-regular fa-file-pdf"></i>&nbsp;Paper</a> |
+                        <a href="./assets/paper/atc19-liang/atc19-liang-slide.pdf" target="_blank"><i
+                                class="fa-regular fa-file-powerpoint"></i>&nbsp;Slide</a> |
+                        <a href="https://www.usenix.org/conference/atc19/presentation/liang" target="_blank"><i
+                                class="fa-solid fa-clapperboard"></i>&nbsp;Talk</a> |
+                        <a href="https://github.com/Cognitive-SSD/Cognitive-SSD" target="_blank"><i
+                                class="fa-solid fa-code"></i>&nbsp;Code</a> |
+                        <a onclick="function_bibtex('atc19-liang-bibtex')"><i
+                                class="fa-solid fa-book-bible"></i>&nbsp;Bibtex</a>
+                    </p>
+                </div>
+            </div>
+            <div class="pub-abstract" id="atc19-liang-abstract">
+                <p id="atc19-liang-abstract-content"></p>
+                <script>
+                    includeHTMLContent('htmls/abstract.html', 'atc19-liang-abstract-content', 'atc19-liang-abstract-content');
+                </script>
+            </div>
+            <div class="pub-bibtex" id="atc19-liang-bibtex">
+                <pre id="atc19-liang-bibtex-pre"></pre>
+                <script>
+                    includeHTMLContent('htmls/bibtex.html', 'atc19-liang', 'atc19-liang-bibtex-pre');
+                </script>
+                <div class="pub-bibtex-operations">
+                    <a onclick="bibtexCopy('atc19-liang-bibtex-pre')"><i class="fa-solid fa-copy"></i>&nbsp;Copy</a>
+                    <a href="./assets/paper/atc19-liang/atc19-liang.bib" download><i
+                            class="fa-solid fa-download"></i>&nbsp;Download</a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <hr>
+
+    <!-- Teaching -->
+    <div class="teaching" id="teaching">
+        <h2><strong>Teaching</strong></h2>
+        <p><strong>
+                Integrated design of system hardware</strong></p>
+        <p>
+            Teaching Assistant, Fall 2023 @ HFUT.
+        </p>
+        <p>
+            Delivered tutorials on 5-stage RISC (based on RISC-V, MIPS or ARM ISA) CPU design and assisted in
+            solving
+            technical issues for the 150+ student class.<br>
+        </p>
+    </div>
+
+    <hr>
+
+    <!-- Awards and Honors -->
+    <div class="awards" id="awards">
+        <h2><strong>Awards &amp; Honors</strong></h2>
+        <ul>
+            <li>President Scholarship, awarded by Hefei University of Technology 2024</li>
+            <li>Outstanding Graduate, awarded by Department of Education of Anhui Province 2024</li>
+            <li>Outstanding Graduate, awarded by Hefei University of Technology, 2024</li>
+            <li>Merit Student, awarded by Hefei University of Technology, 2023</li>
+            <li>Intelligent Base: "Future Star", awarded by Ministry of Education, 2022</li>
+            <li>National Scholarship, awarded by Ministry of Education, 2022</li>
+            <li>National Scholarship, awarded by Ministry of Education, 2021</li>
+        </ul>
+    </div>
+
+    <hr>
+
+    <!-- Contact -->
+    <div class="contact" id="contact">
+        <h2><strong>Contact</strong></h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Address</th>
+                    <th>Phone</th>
+                    <th>Email</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>No. 6, South Road of Zhongguancun, Haidian District, Beijing.</td>
+                    <td>(+86) 136-3709-9336</td>
+                    <td>niyeming24@mails.ucas.ac.cn or yeming.ni@gmail.com</td>
+                </tr>
+            </tbody>
+        </table>
+
+    </div>
+
+    <hr width="300px">
+
+    <!-- Footer -->
+    <div class="footer">
+        <p>Copyright &#169 Yeming Ni
+            2022 -
+            <script>var d = new Date(); document.write(d.getFullYear())</script>
+            <!-- Please cite the source repo as follows -->
+            <!-- <br>Adapted from <a href="https://ming-make.github.io/">here</a>. -->
+        </p>
+        <p>
+            <script>
+                var lastModTime = new Date(document.lastModified);
+                document.write("Last Modified: " + lastModTime)
+            </script><br>
+        </p>
+        <br>
+    </div>
+
+</body>
+
+</html>
