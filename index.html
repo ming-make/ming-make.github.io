@@ -16,6 +16,7 @@
     <link rel="icon" type="image/x-icon" href="./img/ucas.png">
 
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/modal.css">
     <title>Yeming Ni</title>
 </head>
 
@@ -23,6 +24,7 @@
 
     <script src="js/script.js"></script>
     <script src="js/bibtex.js"></script>
+
 
     <!-- Header -->
     <div class="header">
@@ -58,14 +60,6 @@
 
     <hr>
 
-    <!-- Navigation -->
-    <!-- <div class="navi">
-        <p id="publications-link"><a onclick="scrollToSection('publications')">Publications</a></p>
-        <p id="teaching-link"><a onclick="scrollToSection('teaching')">Teaching</a></p>
-        <p id="awards-link"><a onclick="scrollToSection('awards')">Awards &amp; Honors</a></p>
-        <p id="contact-link"><a onclick="scrollToSection('contact')">Contact</a></p>
-    </div> -->
-
     <!-- Publications -->
     <div class="publications" id="publications">
         <h2><strong>Publications</strong></h2>
@@ -93,7 +87,9 @@
                         <a href="./assets/paper/atc19-liang/atc19-liang.pdf" target="_blank"><i
                                 class="fa-regular fa-file-pdf"></i>&nbsp;Paper</a> |
                         <a href="./assets/paper/atc19-liang/atc19-liang-slide.pdf" target="_blank"><i
-                                class="fa-regular fa-file-powerpoint"></i>&nbsp;Slide</a> |
+                                class="fa-regular fa-file-powerpoint"></i>&nbsp;Slides</a> |
+                        <a data-modal-action="open" data-modal-target="atc19-liang-slide"><i
+                                class="fa-regular fa-file-powerpoint"></i>&nbsp;打开模态框</a> |
                         <a href="https://www.usenix.org/conference/atc19/presentation/liang" target="_blank"><i
                                 class="fa-solid fa-clapperboard"></i>&nbsp;Talk</a> |
                         <a href="https://github.com/Cognitive-SSD/Cognitive-SSD" target="_blank"><i
@@ -103,12 +99,26 @@
                     </p>
                 </div>
             </div>
+            <!-- Paper slide modal display -->
+            <div id="atc19-liang-slide" class="modal">
+                <div class="modal-content modal-normal">
+                    <div class="model-title-line"><span class="close">&times;</span>
+                        <h3>Slides - Cognitive SSD: A Deep Learning Engine for In-Storage Data Retrieval</h3>
+                    </div>
+                    <iframe src="/assets/paper/atc19-liang/atc19-liang-slide.pdf" width="100%" height="100%">
+                        This browser does not support PDFs. Please download the PDF to view it: <a
+                            href="/assets/paper/atc19-liang/atc19-liang-slide.pdf">Download PDF</a>
+                    </iframe>
+                </div>
+            </div>
+            <!-- Paper abstract display -->
             <div class="pub-abstract" id="atc19-liang-abstract">
                 <p id="atc19-liang-abstract-content"></p>
                 <script>
                     includeHTMLContent('htmls/abstract.html', 'atc19-liang-abstract-content', 'atc19-liang-abstract-content');
                 </script>
             </div>
+            <!-- Paper bibtex display, copy and download -->
             <div class="pub-bibtex" id="atc19-liang-bibtex">
                 <pre id="atc19-liang-bibtex-pre"></pre>
                 <script>
@@ -199,6 +209,8 @@
         </p>
         <br>
     </div>
+
+    <script src="js/modal.js"></script>
 
 </body>
 

@@ -1,5 +1,5 @@
 /* CSS stylesheet for Yeming Ni's homepage
-Author: Yeming Ni   */
+Author: Yeming Ni */
 
 a {
     color: #3F3F3F;
@@ -30,33 +30,6 @@ h3 {
     font-size: 20px;
 }
 
-/* .side-nav {
-    position: fixed;
-    top: 50%;
-    right: 0;
-    transform: translateY(-50%);
-    background: rgba(0, 0, 0, 0.7);
-    border-radius: 10px 0 0 10px;
-    padding: 10px;
-    z-index: 1000;
-}
-
-.side-nav-item {
-    text-align: center;
-    color: white;
-    padding: 10px;
-    margin: 5px 0;
-    cursor: pointer;
-    background: rgba(255, 255, 255, 0.1);
-    border-radius: 5px;
-    transition: background-color 0.3s, color 0.3s;
-    font-size: 15px;
-}
-
-.side-nav-item:hover {
-    background: #007bff;
-    color: #fff;
-} */
 
 body {
     color: black;
@@ -107,6 +80,10 @@ body {
     width: 25%;
 }
 
+.header .photo small {
+    text-align: center;
+}
+
 .header .photo img {
     display: block;
     padding-bottom: 10px;
@@ -115,36 +92,6 @@ body {
     height: auto;
     margin: auto;
 }
-
-/* .navi {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-
-    position: sticky;
-    position: -webkit-sticky;
-    top: 0px;
-
-    background-color: white;
-    z-index: 1;
-    border-top: 2px solid black;
-    border-bottom: 2px solid black;
-}
-
-.navi p {
-    margin-top: 12px;
-    margin-bottom: 10px;
-    font-size: 20px;
-}
-
-.navi a {
-    color: black;
-    text-decoration: none;
-}
-
-.navi a:hover {
-    color: black;
-} */
 
 .publications .pub-block {
     border: 2px dashed #8F8F8F;
@@ -267,16 +214,10 @@ body {
 
 /* for tablet */
 @media only screen and (max-width:850px) and (min-width:500px) {
+
     body {
         width: 98%;
         margin: 0px 10px 0px 10px;
-    }
-
-    .publications {
-        display: flex;
-        flex-direction: column;
-        width: fit-content;
-        align-items: center;
     }
 
     .publications .pub-block .pub-intro {
